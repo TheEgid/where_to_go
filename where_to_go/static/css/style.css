@@ -1,0 +1,22 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #map {
+  height: 100%;
+}
+
+.place-description img {
+  max-width: 100%;
+}
+
+.sidebar-content {
+  padding: 14px 20px;
+  height: 100%;
+}
+.select-place-prompt{
+  color: red;
+  width: 100px;
+}
