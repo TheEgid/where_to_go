@@ -1,0 +1,43 @@
+version: '3.5'
+
+services:
+
+  # web container, with django + gunicorn
+  djangoapp:
+    build: .
+    environment:
+      - DJANGO_SETTINGS_MODULE
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/opt/services/djangoapp
+      - static:/opt/services/djangoapp/static
+      - media:/opt/services/djangoapp/media
+    networks:
+      - nginx_network
+
+
+  # reverse proxy container (nginx)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - static:/opt/services/djangoapp/static
+      - media:/opt/services/djangoapp/media
+    environment:
+        - TZ=Europe/Moscow
+    networks:
+      - nginx_network
+    depends_on:
+      - djangoapp
+
+
+networks:
+  nginx_network:
+    driver: bridge
+
+volumes:
+  static:
+  media:

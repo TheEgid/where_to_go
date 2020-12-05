@@ -1,16 +1,20 @@
 from pathlib import Path
 import platform
 import os
+import osgeo
 from dotenv import load_dotenv
+
 load_dotenv()
 
-#OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
+OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
+if OPERATING_SYSTEM == 'Windows':
+    OSGEO_PATH = Path(''.join(osgeo.__path__))
+    GDAL_LIBRARY_PATH = str(OSGEO_PATH / 'gdal301')
+    GEOS_LIBRARY_PATH = str(OSGEO_PATH / 'geos_c')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -29,6 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'rest_framework_gis',
+    'django.contrib.gis',
     'places',
 ]
 
@@ -62,7 +68,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'where_to_go.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -72,7 +77,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -92,7 +96,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -108,3 +111,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (BASE_DIR / 'static',)
+
+STATIC_ROOT = BASE_DIR.parent.parent / 'static'
