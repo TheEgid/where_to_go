@@ -19,8 +19,12 @@ if OPERATING_SYSTEM == 'Windows':
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if OPERATING_SYSTEM != "Windows":
+    DEBUG = False
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    X_FRAME_OPTIONS = 'DENY'
+else:
+    DEBUG = os.getenv("DEBUG", "true").lower() in ['yes', '1', 'true']
 
 ALLOWED_HOSTS = ['*']
 
@@ -77,8 +81,6 @@ DATABASES = {'default': {
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -106,17 +108,19 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
+STATIC_ROOT = str(BASE_DIR.parent / 'static')
 
-MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (BASE_DIR / 'static',)
 
-STATIC_ROOT = BASE_DIR.parent / 'static'
+MEDIA_URL = '/media/'
 
+MEDIA_ROOT = str(BASE_DIR / 'media')
+
+# breakpoint()

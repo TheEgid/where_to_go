@@ -20,6 +20,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 RUN mkdir -p /opt/services/djangoapp
 WORKDIR /opt/services/djangoapp
+
 COPY ./requirements.txt /opt/services/djangoapp
 
 RUN pip install -r requirements.txt
