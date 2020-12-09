@@ -39,11 +39,11 @@ pip install -r requirements.txt
 ```
 
 Программа требует установленной базы данных PostgreSQL 13.1 c именем <POSTGRES_DB1>.
-В PGADMIN создайте и запустите следующий скрипт c данными .env файла -
+В PGADMIN создайте и запустите скрипт c переменными из .env файла -
 ```
 
 CREATE USER <POSTGRES_USER1>;
-ALTER USER <POSTGRES_USER1> WITH ENCRYPTED PASSWORD 'POSTGRES_PASSWORD1';
+ALTER USER <POSTGRES_USER1> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD1>';
 GRANT ALL PRIVILEGES ON DATABASE <POSTGRES_DB1> TO <POSTGRES_USER1>;
 ALTER ROLE <POSTGRES_USER1> SUPERUSER;
 ```
@@ -57,3 +57,4 @@ ALTER ROLE <POSTGRES_USER1> SUPERUSER;
 python main.py runserver
 ```
 
+https://jsonplaceholder.typicode.com/
