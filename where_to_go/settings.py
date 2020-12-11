@@ -113,7 +113,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-STATIC_ROOT = str(BASE_DIR.parent / 'static')
+STATIC_ROOT = BASE_DIR.parent / 'static'
 
 STATIC_URL = '/static/'
 
@@ -121,6 +121,6 @@ STATICFILES_DIRS = (BASE_DIR / 'static',)
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = str(BASE_DIR / 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # breakpoint()
