@@ -1,12 +1,12 @@
 {% load static %}
-
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Куда пойти — Москва глазами Артёма</title>
 
-    <link rel="shortcut icon" href="{% static "/favicon.png" %}" type="image/png">
+    <link rel="shortcut icon" href="{% static '/favicon.png' %}" type="image/png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -14,41 +14,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/@ansur/leaflet-pulse-icon@0.1.1/dist/L.Icon.Pulse.css">
 
-    <link rel="stylesheet" href="{% static "/css/style.css" %}"/>
-    <link rel="stylesheet" href="{% static "/css/leaflet-sidebar.css" %}"/>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/leaflet-sidebar.css' %}">
 
-
-    <script id="places-geojson" type="application/json">
-        {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [37.62, 55.793676]
-                    },
-                    "properties": {
-                        "title": "«Легенды Москвы",
-                        "placeId": "moscow_legends",
-                        "detailsUrl": "https://raw.githubusercontent.com/devmanorg/where-to-go-frontend/master/places/moscow_legends.json"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [37.64, 55.753676]
-                    },
-                    "properties": {
-                        "title": "Крыши24.рф",
-                        "placeId": "roofs24",
-                        "detailsUrl": "https://raw.githubusercontent.com/devmanorg/where-to-go-frontend/master/places/roofs24.json"
-                    }
-                }
-            ]
-        }
-    </script>
+    {{ places_geojson|json_script:"places-geojson" }}
 
     <script id="app-template" type="text/template">
         <div v-bind:class="{'sidebar-content': 1, 'bg-white': selectedPlace, 'bg-secondary': !selectedPlace}">
@@ -106,11 +75,11 @@
 
 {% verbatim %}
 
-    <div id="sidebar">
-        <div id="sidebar-app"></div>
-    </div>
+<div id="sidebar">
+    <div id="sidebar-app"></div>
+</div>
 
-    <div id="map"></div>
+<div id="map"></div>
 
 {% endverbatim %}
 
@@ -125,7 +94,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js" integrity="sha256-ngFW3UnAN0Tnm76mDuu7uUtYEcG3G5H1+zioJw3t+68=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@ansur/leaflet-pulse-icon@0.1.1/dist/L.Icon.Pulse.js"></script>
 
-<script src="{% static "/js/leaflet-sidebar.js" %}"></script>
+<script src="{% static '/js/leaflet-sidebar.js' %}"></script>
 
 <script>
     const map = L.map('map');
