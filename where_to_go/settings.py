@@ -81,6 +81,10 @@ DATABASES = {'default': {
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
 
+SERIALIZATION_MODULES = {
+    "geojson": "django.contrib.gis.serializers.geojson",
+ }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
