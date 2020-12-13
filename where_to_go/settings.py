@@ -4,12 +4,15 @@ import os
 import osgeo
 from dotenv import load_dotenv
 
-load_dotenv()
-
 OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+dotenv_path = BASE_DIR / '.env'
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
+
 
 if OPERATING_SYSTEM == 'Windows':
     OSGEO_PATH = Path(''.join(osgeo.__path__))
@@ -80,6 +83,11 @@ DATABASES = {'default': {
     'PORT': '5432',
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
+
+
+SERIALIZATION_MODULES = {
+    "geojson": "django.contrib.gis.serializers.geojson",
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
