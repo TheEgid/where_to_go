@@ -1,1032 +1,869 @@
 [
-    {
-        "model": "admin.logentry",
-        "pk": 1,
-        "fields": {
-            "action_time": "2020-12-06T16:26:00.352Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "1",
-            "object_repr": "Place object (1)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 2,
-        "fields": {
-            "action_time": "2020-12-06T16:26:21.798Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "1",
-            "object_repr": "Place object (1)",
-            "action_flag": 2,
-            "change_message": "[]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 3,
-        "fields": {
-            "action_time": "2020-12-06T16:33:48.125Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "2",
-            "object_repr": "Place object (2)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 4,
-        "fields": {
-            "action_time": "2020-12-06T16:34:56.695Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "1",
-            "object_repr": "Place object (1)",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Latitude\", \"Longitude\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 5,
-        "fields": {
-            "action_time": "2020-12-07T18:16:55.278Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "2",
-            "object_repr": "Place object (2)",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Latitude\", \"Longitude\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 6,
-        "fields": {
-            "action_time": "2020-12-07T18:17:02.580Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "1",
-            "object_repr": "Place object (1)",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Latitude\", \"Longitude\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 7,
-        "fields": {
-            "action_time": "2020-12-07T18:20:49.002Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "1",
-            "object_repr": "Place object (1)",
-            "action_flag": 2,
-            "change_message": "[]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 8,
-        "fields": {
-            "action_time": "2020-12-07T18:20:54.340Z",
-            "user": 1,
-            "content_type": 7,
-            "object_id": "2",
-            "object_repr": "Place object (2)",
-            "action_flag": 2,
-            "change_message": "[]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 9,
-        "fields": {
-            "action_time": "2020-12-07T19:24:21.095Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "1",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 10,
-        "fields": {
-            "action_time": "2020-12-08T17:53:57.904Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "1",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 11,
-        "fields": {
-            "action_time": "2020-12-08T17:54:49.342Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "2",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 12,
-        "fields": {
-            "action_time": "2020-12-08T17:54:54.684Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "3",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 13,
-        "fields": {
-            "action_time": "2020-12-08T17:54:58.982Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "4",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 14,
-        "fields": {
-            "action_time": "2020-12-08T17:55:02.404Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "5",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 15,
-        "fields": {
-            "action_time": "2020-12-08T17:55:11.423Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "6",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 16,
-        "fields": {
-            "action_time": "2020-12-08T17:55:14.501Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "7",
-            "object_repr": "img",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 17,
-        "fields": {
-            "action_time": "2020-12-08T17:57:01.287Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "7",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 18,
-        "fields": {
-            "action_time": "2020-12-08T18:02:51.837Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "8",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 19,
-        "fields": {
-            "action_time": "2020-12-08T18:03:03.919Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "9",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 20,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.721Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "6",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 21,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.729Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "5",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 22,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.730Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "4",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 23,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.732Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "3",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 24,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.734Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "2",
-            "object_repr": "img",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 25,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.736Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "9",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 26,
-        "fields": {
-            "action_time": "2020-12-08T18:03:16.737Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "8",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 27,
-        "fields": {
-            "action_time": "2020-12-08T18:03:29.539Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "10",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b1.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 28,
-        "fields": {
-            "action_time": "2020-12-08T18:03:34.399Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "11",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_1.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 29,
-        "fields": {
-            "action_time": "2020-12-08T18:03:37.680Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "12",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_2.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 30,
-        "fields": {
-            "action_time": "2020-12-08T18:03:41.704Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "13",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_3.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 31,
-        "fields": {
-            "action_time": "2020-12-08T18:03:45.083Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "14",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_4.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 32,
-        "fields": {
-            "action_time": "2020-12-08T18:03:48.600Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "15",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 33,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.946Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "10",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b1.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 34,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.953Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "11",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_1.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 35,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.954Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "12",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_2.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 36,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.956Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "13",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_3.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 37,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.957Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "14",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_4.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 38,
-        "fields": {
-            "action_time": "2020-12-08T18:05:17.960Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "15",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 3,
-            "change_message": ""
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 39,
-        "fields": {
-            "action_time": "2020-12-08T18:05:43.810Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "16",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b1.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 40,
-        "fields": {
-            "action_time": "2020-12-08T18:05:47.133Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "17",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_1.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 41,
-        "fields": {
-            "action_time": "2020-12-08T18:05:51.323Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "18",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_2.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 42,
-        "fields": {
-            "action_time": "2020-12-08T18:05:54.799Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "19",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_3.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 43,
-        "fields": {
-            "action_time": "2020-12-08T18:05:58.219Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "20",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_4.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 44,
-        "fields": {
-            "action_time": "2020-12-08T18:06:01.449Z",
-            "user": 1,
-            "content_type": 8,
-            "object_id": "21",
-            "object_repr": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 1,
-        "fields": {
-            "name": "Can add log entry",
-            "content_type": 1,
-            "codename": "add_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 2,
-        "fields": {
-            "name": "Can change log entry",
-            "content_type": 1,
-            "codename": "change_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 3,
-        "fields": {
-            "name": "Can delete log entry",
-            "content_type": 1,
-            "codename": "delete_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 4,
-        "fields": {
-            "name": "Can view log entry",
-            "content_type": 1,
-            "codename": "view_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 5,
-        "fields": {
-            "name": "Can add permission",
-            "content_type": 2,
-            "codename": "add_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 6,
-        "fields": {
-            "name": "Can change permission",
-            "content_type": 2,
-            "codename": "change_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 7,
-        "fields": {
-            "name": "Can delete permission",
-            "content_type": 2,
-            "codename": "delete_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 8,
-        "fields": {
-            "name": "Can view permission",
-            "content_type": 2,
-            "codename": "view_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 9,
-        "fields": {
-            "name": "Can add group",
-            "content_type": 3,
-            "codename": "add_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 10,
-        "fields": {
-            "name": "Can change group",
-            "content_type": 3,
-            "codename": "change_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 11,
-        "fields": {
-            "name": "Can delete group",
-            "content_type": 3,
-            "codename": "delete_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 12,
-        "fields": {
-            "name": "Can view group",
-            "content_type": 3,
-            "codename": "view_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 13,
-        "fields": {
-            "name": "Can add user",
-            "content_type": 4,
-            "codename": "add_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 14,
-        "fields": {
-            "name": "Can change user",
-            "content_type": 4,
-            "codename": "change_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 15,
-        "fields": {
-            "name": "Can delete user",
-            "content_type": 4,
-            "codename": "delete_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 16,
-        "fields": {
-            "name": "Can view user",
-            "content_type": 4,
-            "codename": "view_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 17,
-        "fields": {
-            "name": "Can add content type",
-            "content_type": 5,
-            "codename": "add_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 18,
-        "fields": {
-            "name": "Can change content type",
-            "content_type": 5,
-            "codename": "change_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 19,
-        "fields": {
-            "name": "Can delete content type",
-            "content_type": 5,
-            "codename": "delete_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 20,
-        "fields": {
-            "name": "Can view content type",
-            "content_type": 5,
-            "codename": "view_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 21,
-        "fields": {
-            "name": "Can add session",
-            "content_type": 6,
-            "codename": "add_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 22,
-        "fields": {
-            "name": "Can change session",
-            "content_type": 6,
-            "codename": "change_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 23,
-        "fields": {
-            "name": "Can delete session",
-            "content_type": 6,
-            "codename": "delete_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 24,
-        "fields": {
-            "name": "Can view session",
-            "content_type": 6,
-            "codename": "view_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 25,
-        "fields": {
-            "name": "Can add place",
-            "content_type": 7,
-            "codename": "add_place"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 26,
-        "fields": {
-            "name": "Can change place",
-            "content_type": 7,
-            "codename": "change_place"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 27,
-        "fields": {
-            "name": "Can delete place",
-            "content_type": 7,
-            "codename": "delete_place"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 28,
-        "fields": {
-            "name": "Can view place",
-            "content_type": 7,
-            "codename": "view_place"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 29,
-        "fields": {
-            "name": "Can add image",
-            "content_type": 8,
-            "codename": "add_image"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 30,
-        "fields": {
-            "name": "Can change image",
-            "content_type": 8,
-            "codename": "change_image"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 31,
-        "fields": {
-            "name": "Can delete image",
-            "content_type": 8,
-            "codename": "delete_image"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 32,
-        "fields": {
-            "name": "Can view image",
-            "content_type": 8,
-            "codename": "view_image"
-        }
-    },
-    {
-        "model": "auth.user",
-        "pk": 1,
-        "fields": {
-            "password": "pbkdf2_sha256$216000$CROueho7H6zd$he0SAHJmmsmVq2MpZ/+aVexukjWN7OG6hN58NPurlss=",
-            "last_login": "2020-12-06T15:59:18.378Z",
-            "is_superuser": true,
-            "username": "in_one",
-            "first_name": "",
-            "last_name": "",
-            "email": "rmail5@yandex.ru",
-            "is_staff": true,
-            "is_active": true,
-            "date_joined": "2020-12-06T15:58:07.816Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "admin",
-            "model": "logentry"
-        },
-        "id": 1
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "auth",
-            "model": "permission"
-        },
-        "id": 2
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "auth",
-            "model": "group"
-        },
-        "id": 3
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "auth",
-            "model": "user"
-        },
-        "id": 4
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "contenttypes",
-            "model": "contenttype"
-        },
-        "id": 5
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "sessions",
-            "model": "session"
-        },
-        "id": 6
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "places",
-            "model": "place"
-        },
-        "id": 7
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "fields": {
-            "app_label": "places",
-            "model": "image"
-        },
-        "id": 8
-    },
-    {
-        "model": "sessions.session",
-        "pk": "ugyr8paohy0gqreelyyfnlrui5jt3i1b",
-        "fields": {
-            "session_data": ".eJxVjEEOwiAQRe_C2pAyBASX7j0DmWGmUjWQlHbVeHdt0oVu_3vvbyrhupS0dpnTxOqijDr9boT5KXUH_MB6bzq3uswT6V3RB-361lhe18P9OyjYy7eOfhjFM-AI4IIhZg5igSxBdBSiAx_BCDOawUfk7PGM0TKyseQ8qfcH7sU4XA:1klwRS:QxCwxlNHAwwEfFrJsWs1DXGOu_CglRh6ZfvY4MMChM4",
-            "expire_date": "2020-12-20T15:59:18.380Z"
-        }
-    },
-    {
-        "model": "places.place",
-        "pk": 1,
-        "fields": {
-            "title": "\u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0435\u043a\u0442 \u00ab\u041a\u0440\u044b\u0448\u043824.\u0440\u0444\u00bb",
-            "placeId": "roofs24",
-            "short_description": "\u0425\u043e\u0442\u0438\u0442\u0435 \u0443\u0432\u0438\u0434\u0435\u0442\u044c \u041c\u043e\u0441\u043a\u0432\u0443 \u0441 \u0432\u044b\u0441\u043e\u0442\u044b \u0438 \u0440\u0430\u0437\u0434\u0435\u043b\u0438\u0442\u044c \u044f\u0440\u043a\u0438\u0435 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f \u0441 \u0434\u0440\u0443\u0437\u044c\u044f\u043c\u0438? \u0412 \u044d\u0442\u043e\u043c \u043f\u043e\u043c\u043e\u0436\u0435\u0442 \u043f\u0440\u043e\u0435\u043a\u0442 \u00ab\u041a\u0440\u044b\u0448\u043824.\u0440\u0444\u00bb. \u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u043a\u0440\u044b\u0448\u0443 \u0438\u0437 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0430 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0445 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432 \u0438 \u043f\u0440\u043e\u0432\u0435\u0441\u0442\u0438 \u0442\u0430\u043c \u0441\u0432\u0438\u0434\u0430\u043d\u0438\u0435, \u0432\u0435\u0447\u0435\u0440\u0438\u043d\u043a\u0443, \u0442\u0432\u043e\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u0437\u0430\u043d\u044f\u0442\u0438\u0435, \u0444\u043e\u0442\u043e\u0441\u0435\u0441\u0441\u0438\u044e \u0438\u043b\u0438 \u0447\u0442\u043e-\u0442\u043e \u0435\u0449\u0451.",
-            "long_description": "<p>\u041f\u0440\u043e\u0435\u043a\u0442 \u00ab\u041a\u0440\u044b\u0448\u043824.\u0440\u0444\u00bb \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u0442 \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u0438 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f \u043d\u0430 \u043a\u0440\u044b\u0448\u0430\u0445, \u043e\u0442\u043a\u0443\u0434\u0430 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u044f\u044e\u0449\u0438\u0435 \u0432\u0438\u0434\u044b \u043d\u0430 \u043c\u0435\u0433\u0430\u043f\u043e\u043b\u0438\u0441. </p><h4>\u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u043d\u0430 \u0432\u044b\u0441\u043e\u0442\u0435</h4><p>\u0421\u043f\u0438\u0441\u043e\u043a \u043a\u0440\u044b\u0448, \u043d\u0430 \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0434\u043d\u044f\u0442\u044c\u0441\u044f, \u043e\u0447\u0435\u043d\u044c \u0432\u0435\u043b\u0438\u043a, \u0438 \u043d\u0430\u0445\u043e\u0434\u044f\u0442\u0441\u044f \u043e\u043d\u0438 \u0432 \u0440\u0430\u0437\u043d\u044b\u0445 \u0443\u0433\u043e\u043b\u043a\u0430\u0445 \u0433\u043e\u0440\u043e\u0434\u0430. \u041e\u0442\u0442\u0443\u0434\u0430 \u0432\u0438\u0434\u043d\u044b \u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u0438 \u043a\u0440\u0430\u0441\u0438\u0432\u0435\u0439\u0448\u0438\u0435 \u0433\u043e\u0440\u043e\u0434\u0441\u043a\u0438\u0435 \u043f\u0430\u043d\u043e\u0440\u0430\u043c\u044b, \u0442\u0430\u043a \u0447\u0442\u043e \u044d\u0442\u043e \u043e\u0442\u043b\u0438\u0447\u043d\u0430\u044f \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c \u0437\u0430\u043d\u043e\u0432\u043e \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u0434\u043b\u044f \u0441\u0435\u0431\u044f \u041c\u043e\u0441\u043a\u0432\u0443. \u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u044b, \u043d\u0430 \u044d\u0442\u0438 \u043a\u0440\u044b\u0448\u0438 \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0434\u043d\u0438\u043c\u0430\u0442\u044c\u0441\u044f \u0441 \u0434\u0435\u0442\u044c\u043c\u0438. \u041f\u0435\u0440\u0435\u0434 \u043f\u043e\u0434\u044a\u0451\u043c\u043e\u043c \u043e\u043f\u044b\u0442\u043d\u044b\u0439 \u0433\u0438\u0434 \u043f\u0440\u043e\u0432\u0435\u0434\u0451\u0442 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u0430\u0436 \u0438 \u0431\u0443\u0434\u0435\u0442 \u0441\u043e\u043f\u0440\u043e\u0432\u043e\u0436\u0434\u0430\u0442\u044c \u0432\u0430\u0441 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0438.</p><p>\u0421 \u043a\u0440\u044b\u0448, \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u0434\u043b\u044f \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u044f, \u0432\u044b \u0443\u0432\u0438\u0434\u0438\u0442\u0435 \u00ab\u041c\u043e\u0441\u043a\u0432\u0430 \u0421\u0438\u0442\u0438\u00bb \u0432\u0431\u043b\u0438\u0437\u0438, \u0441\u0442\u0430\u0434\u0438\u043e\u043d \u00ab\u041b\u0443\u0436\u043d\u0438\u043a\u0438\u00bb, \u041d\u043e\u0432\u043e\u0434\u0435\u0432\u0438\u0447\u0438\u0439 \u043c\u043e\u043d\u0430\u0441\u0442\u044b\u0440\u044c, \u041a\u0440\u0430\u0441\u043d\u0443\u044e \u0438 \u041a\u0438\u0435\u0432\u0441\u043a\u0443\u044e \u043f\u043b\u043e\u0449\u0430\u0434\u0438, \u043c\u043e\u0441\u0442 \u0411\u043e\u0433\u0434\u0430\u043d\u0430 \u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u043e\u0433\u043e, \u0441\u0442\u0430\u043b\u0438\u043d\u0441\u043a\u0438\u0435 \u0432\u044b\u0441\u043e\u0442\u043a\u0438, \u041d\u043e\u0432\u044b\u0439 \u0410\u0440\u0431\u0430\u0442, \u0438 \u043c\u043d\u043e\u0433\u0438\u0435 \u0434\u0440\u0443\u0433\u0438\u0435 \u0437\u043d\u0430\u043a\u043e\u0432\u044b\u0435 \u043c\u0435\u0441\u0442\u0430 \u0441\u0442\u043e\u043b\u0438\u0446\u044b. </p><p>\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u2014 1250 \u0440\u0443\u0431\u043b\u0435\u0439, \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u2014 1 \u0447\u0430\u0441. \u0412 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u044b \u0443\u0441\u043b\u0443\u0433\u0438 \u0433\u0438\u0434\u0430.</p><h4>\u0421\u0432\u0438\u0434\u0430\u043d\u0438\u044f \u043d\u0430 \u0432\u044b\u0441\u043e\u0442\u0435 \u043f\u0442\u0438\u0447\u044c\u0435\u0433\u043e \u043f\u043e\u043b\u0451\u0442\u0430</h4><p>\u0410 \u0435\u0449\u0451 \u00ab\u041a\u0440\u044b\u0448\u043824.\u0440\u0444\u00bb \u2014 \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0430\u044f \u043d\u0430\u0445\u043e\u0434\u043a\u0430 \u0434\u043b\u044f \u0442\u0435\u0445, \u043a\u0442\u043e \u0445\u043e\u0447\u0435\u0442 \u0443\u0441\u0442\u0440\u043e\u0438\u0442\u044c \u043d\u0435\u0437\u0430\u0431\u044b\u0432\u0430\u0435\u043c\u043e\u0435 \u0440\u043e\u043c\u0430\u043d\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0441\u0432\u0438\u0434\u0430\u043d\u0438\u0435. \u0412\u044b\u0431\u0438\u0440\u0430\u0439\u0442\u0435 \u0441\u0432\u043e\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442 \u0438\u0437 \u043f\u044f\u0442\u0438 \u043a\u0440\u044b\u0448, \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445 \u0440\u044f\u0434\u043e\u043c \u0441 \u0433\u043b\u0430\u0432\u043d\u044b\u043c\u0438 \u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044f\u043c\u0438, \u0438 \u0443\u0434\u0438\u0432\u0438\u0442\u0435 \u043b\u044e\u0431\u0438\u043c\u043e\u0433\u043e \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430. </p><p>\u041d\u0430 \u043a\u0440\u044b\u0448\u0435 \u0434\u043b\u044f \u0432\u0430\u0441 \u0443\u0441\u0442\u0440\u043e\u044f\u0442 \u0437\u043e\u043d\u0443 \u043e\u0442\u0434\u044b\u0445\u0430 \u0441 \u043f\u043b\u0435\u0434\u0430\u043c\u0438 \u0438 \u043f\u043e\u0434\u0443\u0448\u043a\u0430\u043c\u0438. \u0412 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0442\u0430\u043a\u0436\u0435 \u0432\u0445\u043e\u0434\u044f\u0442 \u0441\u0432\u0435\u0447\u0438, \u0446\u0432\u0435\u0442\u043e\u043a, \u0431\u043e\u043a\u0430\u043b\u044b, \u0441\u0442\u043e\u043b\u043e\u0432\u044b\u0435 \u043f\u0440\u0438\u0431\u043e\u0440\u044b, \u0444\u0440\u0443\u043a\u0442\u043e\u0432\u0430\u044f \u0442\u0430\u0440\u0435\u043b\u043a\u0430 \u0438 \u043d\u0430\u043f\u0438\u0442\u043e\u043a. \u0410 \u0435\u0441\u043b\u0438 \u0432\u0430\u0448\u0435 \u0441\u043e\u0431\u044b\u0442\u0438\u0435 \u0431\u043e\u043b\u0435\u0435 \u0441\u0442\u0440\u043e\u0433\u043e\u0435 \u0438 \u0442\u043e\u0440\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435, \u0442\u043e \u0434\u043b\u044f \u0432\u0430\u0441 \u043f\u043e\u0441\u0442\u0430\u0432\u044f\u0442 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u0447\u043d\u044b\u0439 \u0441\u0442\u043e\u043b \u0438 \u0441\u0442\u0443\u043b\u044c\u044f. \u0417\u0430 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u043f\u043b\u0430\u0442\u0443 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0431\u0443\u043a\u0435\u0442 \u0446\u0432\u0435\u0442\u043e\u0432, \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0435 \u0448\u0430\u0440\u044b, \u043c\u0443\u0437\u044b\u043a\u0430\u043d\u0442\u0430, \u0432\u0438\u043d\u0438\u043b\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c, \u0441\u0430\u043b\u044e\u0442, \u043d\u0430\u043f\u0438\u0442\u043a\u0438 \u0438 \u0435\u0434\u0443. </p><p>\u0411\u0430\u0437\u043e\u0432\u0430\u044f \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0441\u0432\u0438\u0434\u0430\u043d\u0438\u044f \u2014 5500 \u0440\u0443\u0431\u043b\u0435\u0439, \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u2014 2 \u0447\u0430\u0441\u0430.</p><p><strong>\u0424\u043e\u0442\u043e\u0441\u0435\u0441\u0441\u0438\u0438 \u043d\u0430\u0434 \u041c\u043e\u0441\u043a\u0432\u043e\u0439</strong></p><p>\u041d\u0435\u043e\u0431\u044b\u0447\u043d\u044b\u043c \u043f\u043e\u0434\u0430\u0440\u043a\u043e\u043c \u0434\u043b\u044f \u0441\u0435\u0431\u044f \u0438 \u0434\u043b\u044f \u043b\u044e\u0431\u0438\u043c\u044b\u0445 \u043c\u043e\u0436\u0435\u0442 \u0441\u0442\u0430\u0442\u044c \u0444\u043e\u0442\u043e\u0441\u0435\u0441\u0441\u0438\u044f \u043d\u0430 \u043a\u0440\u044b\u0448\u0430\u0445. \u0418\u0437 \u043f\u043e\u043b\u0443\u0441\u043e\u0442\u043d\u0438 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432 \u043a\u0440\u044b\u0448 \u0432\u0430\u043c \u043f\u043e\u043c\u043e\u0433\u0443\u0442 \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u0442\u0443, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043f\u043e\u0434\u043e\u0439\u0434\u0451\u0442 \u0438\u043c\u0435\u043d\u043d\u043e \u0432\u0430\u043c. \u041d\u0430 \u0441\u0435\u0441\u0441\u0438\u0438 \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0440\u0443\u0444\u0435\u0440-\u0444\u043e\u0442\u043e\u0433\u0440\u0430\u0444 \u0441 \u043e\u043f\u044b\u0442\u043e\u043c \u0431\u043e\u043b\u0435\u0435 10 \u043b\u0435\u0442. \u0412 \u0438\u0442\u043e\u0433\u0435 \u0432\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u043e\u043a\u043e\u043b\u043e 100 \u0444\u043e\u0442\u043e\u0441\u043d\u0438\u043c\u043a\u043e\u0432, 15 \u0438\u0437 \u043d\u0438\u0445 \u2014 \u0443\u0436\u0435 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u043c\u0438, \u0442\u0430\u043a \u0447\u0442\u043e \u0438\u0445 \u043c\u043e\u0436\u043d\u043e \u0431\u0443\u0434\u0435\u0442 \u0441\u0440\u0430\u0437\u0443 \u0432\u044b\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0442\u044c \u0432 \u0441\u043e\u0446\u0441\u0435\u0442\u0438 \u0438 \u0443\u0434\u0438\u0432\u043b\u044f\u0442\u044c \u0434\u0440\u0443\u0437\u0435\u0439.</p><p>\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0444\u043e\u0442\u043e\u0441\u0435\u0441\u0441\u0438\u0438 \u2014 \u043e\u0442 4000 \u0440\u0443\u0431\u043b\u0435\u0439, \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u2014 1 \u0447\u0430\u0441. </p><p>\u0422\u0430\u043a\u0436\u0435 \u043f\u0440\u043e\u0435\u043a\u0442 \u00ab\u041a\u0440\u044b\u0448\u043824.\u0440\u0444\u00bb \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0443\u0435\u0442 \u0434\u0435\u0432\u0438\u0447\u043d\u0438\u043a\u0438, \u0432\u0435\u0447\u0435\u0440\u0438\u043d\u043a\u0438, \u0442\u0432\u043e\u0440\u0447\u0435\u0441\u043a\u0438\u0435 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f \u0438 \u043c\u043d\u043e\u0433\u043e\u0435 \u0434\u0440\u0443\u0433\u043e\u0435.</p><p>\u0423\u0437\u043d\u0430\u0442\u044c \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u043c\u043e\u0436\u043d\u043e \u043d\u0430 <a class=\\\"external-link\\\" href=\\\"https://www.\u043a\u0440\u044b\u0448\u043824.\u0440\u0444/\\\" target=\\\"_blank\\\">\u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u043c \u0441\u0430\u0439\u0442\u0435</a> \u0438 \u0432 <a class=\\\"external-link\\\" href=\\\"https://instagram.com/roof24_moscow/\\\" target=\\\"_blank\\\">Instagram</a>.</p>",
-            "lat": 55.7073160000002,
-            "lng": 37.3247839999996,
-            "coordinates": "SRID=4326;POINT (37.3247839999996 55.7073160000002)"
-        }
-    },
-    {
-        "model": "places.place",
-        "pk": 2,
-        "fields": {
-            "title": "\u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u00ab\u041b\u0435\u0433\u0435\u043d\u0434\u044b \u041c\u043e\u0441\u043a\u0432\u044b\u00bb",
-            "placeId": "moscow_legends",
-            "short_description": "\u041d\u0435\u0432\u0430\u0436\u043d\u043e, \u0436\u0438\u0432\u0451\u0442\u0435 \u043b\u0438 \u0432\u044b \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u0432\u0441\u044e \u0436\u0438\u0437\u043d\u044c \u0438\u043b\u0438 \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u043e\u043a\u0430\u0437\u0430\u043b\u0438\u0441\u044c \u0432 \u0441\u0442\u043e\u043b\u0438\u0446\u0435, \u0441\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0451\u043c\u043a\u0438\u0439, \u043f\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0438 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u044f\u044e\u0449\u0438\u0439 \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u043f\u043e \u0433\u043e\u0440\u043e\u0434\u0443 \u2014 \u0442\u0432\u043e\u0440\u0447\u0435\u0441\u043a\u0430\u044f \u0438 \u043d\u0435\u043f\u0440\u043e\u0441\u0442\u0430\u044f \u0437\u0430\u0434\u0430\u0447\u0430. \u0418 \u0435\u0451 \u0441 \u0443\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0438\u0435\u043c \u0431\u0435\u0440\u0451\u0442 \u043d\u0430 \u0441\u0435\u0431\u044f \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u00ab\u041b\u0435\u0433\u0435\u043d\u0434\u044b \u041c\u043e\u0441\u043a\u0432\u044b\u00bb!",
-            "long_description": "<p>\u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u044f \u043e\u0442 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u00ab\u041b\u0435\u0433\u0435\u043d\u0434\u044b \u041c\u043e\u0441\u043a\u0432\u044b\u00bb \u2014 \u043f\u0440\u043e\u0441\u0442\u043e\u0439, \u0443\u0434\u043e\u0431\u043d\u044b\u0439 \u0438 \u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0439 \u0441\u043f\u043e\u0441\u043e\u0431 \u043f\u043e\u0437\u043d\u0430\u043a\u043e\u043c\u0438\u0442\u044c\u0441\u044f \u0441 \u0433\u043e\u0440\u043e\u0434\u043e\u043c \u0438\u043b\u0438 \u043e\u0441\u0432\u0435\u0436\u0438\u0442\u044c \u0441\u0432\u043e\u0438 \u0447\u0443\u0432\u0441\u0442\u0432\u0430 \u043a \u043d\u0435\u043c\u0443. \u0427\u0442\u043e \u0432\u044b\u0431\u0435\u0440\u0435\u0442\u0435 \u0432\u044b \u2014 \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0443\u044e \u0438\u043b\u0438 \u043d\u0435\u043e\u0431\u044b\u0447\u043d\u0443\u044e \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u044e, \u043f\u0435\u0448\u0443\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0443 \u0438\u043b\u0438 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u043f\u043e \u0433\u043e\u0440\u043e\u0434\u0443 \u043d\u0430 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u0435? \u041b\u044e\u0431\u044b\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u043c\u043e\u0436\u043d\u043e \u0441\u043a\u043e\u043c\u0431\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0438 \u0441\u043e\u0437\u0434\u0430\u0442\u044c \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u0443\u044e \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u0443\u044e \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u0443\u044e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0443.</p><p>\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u00ab\u041b\u0435\u0433\u0435\u043d\u0434\u044b \u041c\u043e\u0441\u043a\u0432\u044b\u00bb \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u0447\u0430\u0435\u0442 \u0441 \u0430\u043a\u043a\u0440\u0435\u0434\u0438\u0442\u043e\u0432\u0430\u043d\u043d\u044b\u043c\u0438 \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u043e\u0432\u043e\u0434\u0430\u043c\u0438 \u0438 \u0442\u0449\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0441\u043b\u0435\u0434\u0438\u0442 \u0437\u0430 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e\u043c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0439 \u0438 \u0441\u0435\u0440\u0432\u0438\u0441\u0430. \u0410\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435 \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0438 \u043f\u0440\u043e\u0432\u043e\u0434\u044f\u0442\u0441\u044f \u043d\u0430 \u043a\u043e\u043c\u0444\u043e\u0440\u0442\u0430\u0431\u0435\u043b\u044c\u043d\u043e\u043c \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u043c \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0435. \u0414\u043b\u044f \u0432\u0430\u0448\u0435\u0433\u043e \u0443\u0434\u043e\u0431\u0441\u0442\u0432\u0430 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0437\u0430\u0440\u0430\u043d\u0435\u0435 \u0437\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u043e\u0435 \u043c\u0435\u0441\u0442\u043e \u0432 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u0435 \u2014 \u044d\u0442\u043e \u0434\u0435\u043b\u0430\u0435\u0442 \u043f\u043e\u0441\u0430\u0434\u043a\u0443 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u043e\u0439 \u0438 \u043f\u043e\u043d\u044f\u0442\u043d\u043e\u0439.</p><p>\u041f\u043e \u043b\u044e\u0431\u044b\u043c \u0432\u043e\u043f\u0440\u043e\u0441\u0430\u043c \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u043a\u0440\u0443\u0433\u043b\u043e\u0441\u0443\u0442\u043e\u0447\u043d\u043e \u043e\u0431\u0440\u0430\u0442\u0438\u0442\u044c\u0441\u044f \u043f\u043e \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430\u043c \u0433\u043e\u0440\u044f\u0447\u0435\u0439 \u043b\u0438\u043d\u0438\u0438.</p><p>\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u0443\u0437\u043d\u0430\u0432\u0430\u0439\u0442\u0435 <a class=\\\"external-link\\\" href=\\\"https://moscowlegends.ru \\\" target=\\\"_blank\\\">\u043d\u0430 \u0441\u0430\u0439\u0442\u0435</a>. \u0417\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f\u043c\u0438 \u0443\u0434\u043e\u0431\u043d\u043e \u0441\u043b\u0435\u0434\u0438\u0442\u044c <a class=\\\"external-link\\\" href=\\\"https://vk.com/legends_of_moscow \\\" target=\\\"_blank\\\">\u00ab\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435\u00bb</a>, <a class=\\\"external-link\\\" href=\\\"https://www.facebook.com/legendsofmoscow?ref=bookmarks \\\" target=\\\"_blank\\\">\u0432 Facebook</a>.</p>\"",
-            "lat": 55.7775455000001,
-            "lng": 37.6491223999998,
-            "coordinates": "SRID=4326;POINT (37.6491223999998 55.7775455000001)"
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 16,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b1.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b1.jpg",
-            "location": 2
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 17,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b2_1.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b2_1.jpg",
-            "location": 2
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 18,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b2_2.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b2_2.jpg",
-            "location": 2
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 19,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b2_3.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b2_3.jpg",
-            "location": 2
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 20,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b2_4.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b2_4.jpg",
-            "location": 2
-        }
-    },
-    {
-        "model": "places.image",
-        "pk": 21,
-        "fields": {
-            "title": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "image": "\u043b\u0435\u0433\u043d\u0434\u044b2_5.jpg",
-            "location": 2
-        }
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-12-12T13:42:19.661Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Легенды Москвы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-12-12T13:43:09.025Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Крыши24.рф",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-12-12T14:28:16.643Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Экскурсионный проект «Крыши24.рф»",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-12-12T14:30:09.712Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Экскурсионный проект «Крыши24.рф»",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Coordinates\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-12-12T14:30:54.678Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Экскурсионная компания «Легенды Москвы»",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-12-12T14:39:00.030Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "легнды1.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-12-12T14:39:05.358Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "легнды2_1.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-12-12T14:39:11.019Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "легнды2_3.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-12-12T14:39:14.668Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "легнды2_4.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-12-12T14:39:18.099Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "легнды2_5.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-12-12T14:39:23.173Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "кры1.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-12-12T14:39:26.566Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "кры2-1.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-12-12T14:39:29.652Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "кры2-2.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-12-12T14:39:33.219Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "кры2-3.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-12-12T14:39:36.684Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "10",
+        "object_repr": "кры2-4.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-12-12T14:39:40.105Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "кры2-5.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-12-12T14:39:43.200Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "кры2-6.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-12-12T14:39:57.242Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "легнды2_2.jpg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-12-13T07:53:38.086Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Легенды Москвы",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Coordinates\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-12-13T07:53:56.339Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Легенды Москвы",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Coordinates\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-12-13T07:54:06.135Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Легенды Москвы 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"PlaceGeo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-12-13T07:54:13.013Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Легенды Москвы",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"PlaceGeo\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add place",
+        "content_type": 7,
+        "codename": "add_place"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change place",
+        "content_type": 7,
+        "codename": "change_place"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete place",
+        "content_type": 7,
+        "codename": "delete_place"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view place",
+        "content_type": 7,
+        "codename": "view_place"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add place geo",
+        "content_type": 8,
+        "codename": "add_placegeo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change place geo",
+        "content_type": 8,
+        "codename": "change_placegeo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete place geo",
+        "content_type": 8,
+        "codename": "delete_placegeo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view place geo",
+        "content_type": 8,
+        "codename": "view_placegeo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add image",
+        "content_type": 9,
+        "codename": "add_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change image",
+        "content_type": 9,
+        "codename": "change_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete image",
+        "content_type": 9,
+        "codename": "delete_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view image",
+        "content_type": 9,
+        "codename": "view_image"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$hphPpffOID2Y$a+Mlj5B1NO8QgVYDNjrX34JNMt1nn14fh1TvV5zjcok=",
+        "last_login": "2020-12-12T13:40:42.453Z",
+        "is_superuser": true,
+        "username": "in_one",
+        "first_name": "",
+        "last_name": "",
+        "email": "email5@ya.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-12-12T13:40:34.005Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "places",
+        "model": "place"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "places",
+        "model": "placegeo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "places",
+        "model": "image"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0aphkuyfxxfm1h5pgac2lp87tae7jw0t",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEMT3Hpvt9ABgakaiAp7cr479qkC93ec859sYDbWsM28hJmYhcG7PS7RUyP3HZAd2y3zlNv6zJHviv8oINPnfLzerh_BxVH_dbJWpOlc1rphEQekgDIEiIiRK8UmqJc8aCN0JKsP5diDZBQKbrohGTvD9YcN2A:1ko58c:0vF5gEAG0CZjmyFMc2rb0i-bSJFjQM0u5EB3iMQOghY",
+        "expire_date": "2020-12-26T13:40:42.458Z"
+    }
+},
+{
+    "model": "places.place",
+    "pk": 1,
+    "fields": {
+        "title": "Экскурсионный проект «Крыши24.рф»",
+        "placeId": "1",
+        "short_description": "Хотите увидеть Москву с высоты и разделить яркие впечатления с друзьями? В этом поможет проект «Крыши24.рф». Вы можете выбрать крышу из множества интересных вариантов и провести там свидание, вечеринку, творческое занятие, фотосессию или что-то ещё.",
+        "long_description": "Проект «Крыши24.рф» проводит экскурсии и мероприятия на крышах, откуда открываются впечатляющие виды на мегаполис. </p><h4>Экскурсии на высоте</h4><p>Список крыш, на которые можно подняться, очень велик, и находятся они в разных уголках города. Оттуда видны достопримечательности и красивейшие городские панорамы, так что это отличная возможность заново открыть для себя Москву. Экскурсии безопасны, на эти крыши можно подниматься с детьми. Перед подъёмом опытный гид проведёт инструктаж и будет сопровождать вас во время прогулки.</p><p>С крыш, доступных для посещения, вы увидите «Москва Сити» вблизи, стадион «Лужники», Новодевичий монастырь, Красную и Киевскую площади, мост Богдана Хмельницкого, сталинские высотки, Новый Арбат, и многие другие знаковые места столицы. </p><p>Стоимость экскурсии — 1250 рублей, продолжительность — 1 час. В стоимость экскурсии включены услуги гида.</p><h4>Свидания на высоте птичьего полёта</h4><p>А ещё «Крыши24.рф» — настоящая находка для тех, кто хочет устроить незабываемое романтическое свидание. Выбирайте свой вариант из пяти крыш, расположенных рядом с главными достопримечательностями, и удивите любимого человека. </p><p>На крыше для вас устроят зону отдыха с пледами и подушками. В стоимость также входят свечи, цветок, бокалы, столовые приборы, фруктовая тарелка и напиток. А если ваше событие более строгое и торжественное, то для вас поставят праздничный стол и стулья. За дополнительную плату вы можете заказать букет цветов, воздушные шары, музыканта, виниловый проигрыватель, салют, напитки и еду. </p><p>Базовая стоимость свидания — 5500 рублей, продолжительность — 2 часа.</p><p><strong>Фотосессии над Москвой</strong></p><p>Необычным подарком для себя и для любимых может стать фотосессия на крышах. Из полусотни вариантов крыш вам помогут выбрать ту, которая подойдёт именно вам. На сессии будет работать профессиональный руфер-фотограф с опытом более 10 лет. В итоге вы получите около 100 фотоснимков, 15 из них — уже обработанными, так что их можно будет сразу выкладывать в соцсети и удивлять друзей.</p><p>Стоимость фотосессии — от 4000 рублей, продолжительность — 1 час. </p><p>Также проект «Крыши24.рф» организует девичники, вечеринки, творческие мероприятия и многое другое.</p><p>Узнать подробности можно на <a class=\\\"external-link\\\" href=\\\"https://www.крыши24.рф/\\\" target=\\\"_blank\\\">официальном сайте</a> и в <a class=\\\"external-link\\\" href=\\\"https://instagram.com/roof24_moscow/\\\" target=\\\"_blank\\\">Instagram</a>.</p>",
+        "coordinates": "SRID=4326;POINT (37.32478399999957 55.70731600000015)"
+    }
+},
+{
+    "model": "places.place",
+    "pk": 2,
+    "fields": {
+        "title": "Экскурсионная компания «Легенды Москвы»",
+        "placeId": "2",
+        "short_description": "Неважно, живёте ли вы в Москве всю жизнь или впервые оказались в столице, составить ёмкий, познавательный и впечатляющий маршрут по городу — творческая и непростая задача. И её с удовольствием берёт на себя экскурсионная компания «Легенды Москвы»!",
+        "long_description": "<p>Экскурсия от компании «Легенды Москвы» — простой, удобный и приятный способ познакомиться с городом или освежить свои чувства к нему. Что выберете вы — классическую или необычную экскурсию, пешую прогулку или путешествие по городу на автобусе? Любые варианты можно скомбинировать в уникальный маршрут и создать собственную индивидуальную экскурсионную программу.</p><p>Компания «Легенды Москвы» сотрудничает с аккредитованными экскурсоводами и тщательно следит за качеством экскурсий и сервиса. Автобусные экскурсии проводятся на комфортабельном современном транспорте. Для вашего удобства вы можете заранее забронировать конкретное место в автобусе — это делает посадку организованной и понятной.</p><p>По любым вопросам вы можете круглосуточно обратиться по телефонам горячей линии.</p><p>Подробности узнавайте <a class=\\\"external-link\\\" href=\\\"https://moscowlegends.ru \\\" target=\\\"_blank\\\">на сайте</a>. За обновлениями удобно следить <a class=\\\"external-link\\\" href=\\\"https://vk.com/legends_of_moscow \\\" target=\\\"_blank\\\">«ВКонтакте»</a>, <a class=\\\"external-link\\\" href=\\\"https://www.facebook.com/legendsofmoscow?ref=bookmarks \\\" target=\\\"_blank\\\">в Facebook</a>.</p>",
+        "coordinates": "SRID=4326;POINT (37.64912239999976 55.77754550000014)"
+    }
+},
+{
+    "model": "places.image",
+    "pk": 1,
+    "fields": {
+        "title": "легнды1.jpg",
+        "image": "легнды1.jpg",
+        "location": 2
+    }
+},
+{
+    "model": "places.image",
+    "pk": 2,
+    "fields": {
+        "title": "легнды2_1.jpg",
+        "image": "легнды2_1.jpg",
+        "location": 2
+    }
+},
+{
+    "model": "places.image",
+    "pk": 3,
+    "fields": {
+        "title": "легнды2_3.jpg",
+        "image": "легнды2_3.jpg",
+        "location": 2
+    }
+},
+{
+    "model": "places.image",
+    "pk": 4,
+    "fields": {
+        "title": "легнды2_4.jpg",
+        "image": "легнды2_4.jpg",
+        "location": 2
+    }
+},
+{
+    "model": "places.image",
+    "pk": 5,
+    "fields": {
+        "title": "легнды2_5.jpg",
+        "image": "легнды2_5.jpg",
+        "location": 2
+    }
+},
+{
+    "model": "places.image",
+    "pk": 6,
+    "fields": {
+        "title": "кры1.jpg",
+        "image": "кры1.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 7,
+    "fields": {
+        "title": "кры2-1.jpg",
+        "image": "кры2-1.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 8,
+    "fields": {
+        "title": "кры2-2.jpg",
+        "image": "кры2-2.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 9,
+    "fields": {
+        "title": "кры2-3.jpg",
+        "image": "кры2-3.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 10,
+    "fields": {
+        "title": "кры2-4.jpg",
+        "image": "кры2-4.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 11,
+    "fields": {
+        "title": "кры2-5.jpg",
+        "image": "кры2-5.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 12,
+    "fields": {
+        "title": "кры2-6.jpg",
+        "image": "кры2-6.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.image",
+    "pk": 13,
+    "fields": {
+        "title": "легнды2_2.jpg",
+        "image": "легнды2_2.jpg",
+        "location": 1
+    }
+},
+{
+    "model": "places.placegeo",
+    "pk": 1,
+    "fields": {
+        "title": "Легенды Москвы",
+        "placeId": "moscow_legends",
+        "detailsUrl": "https://raw.githubusercontent.com/devmanorg/where-to-go-frontend/master/places/moscow_legends.json",
+        "coordinates": "SRID=4326;POINT (37.62 55.793676)"
+    }
+},
+{
+    "model": "places.placegeo",
+    "pk": 2,
+    "fields": {
+        "title": "Крыши24.рф",
+        "placeId": "roofs24",
+        "detailsUrl": "https://raw.githubusercontent.com/devmanorg/where-to-go-frontend/master/places/roofs24.json",
+        "coordinates": "SRID=4326;POINT (37.64 55.753676)"
+    }
+}
 ]
