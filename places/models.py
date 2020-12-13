@@ -11,6 +11,7 @@ class Place(models.Model):
                                         verbose_name='Полное описание')
     coordinates = PointField(blank=True, null=True)
 
+    objects = models.Manager()
 
     def __str__(self):
         return self.title
@@ -23,7 +24,8 @@ class Image(models.Model):
     title = models.CharField(max_length=200,
                              null=True, blank=True)
     image = models.ImageField()
-    location = models.ForeignKey(Place, on_delete=models.CASCADE, default=0)
+    location = models.ForeignKey(Place, related_name='img',
+                                 on_delete=models.CASCADE, default=0)
 
     objects = models.Manager()
 
