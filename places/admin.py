@@ -4,6 +4,10 @@ from .widgets import LatLongWidget
 from .models import Place, Image, PlaceGeo
 
 
+class ImageInline(admin.TabularInline):
+    model = Image
+
+
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
     model = Place
@@ -12,6 +16,9 @@ class PlaceAdmin(admin.ModelAdmin):
     formfield_overrides = {
         geomodels.PointField: {'widget': LatLongWidget},
     }
+    inlines = [
+        ImageInline,
+    ]
 
 
 @admin.register(PlaceGeo)

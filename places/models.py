@@ -20,6 +20,22 @@ class Place(models.Model):
         ordering = ['title', 'placeId', ]
 
 
+class PlaceGeo(models.Model):
+    title = models.CharField(verbose_name='PlaceGeo', max_length=200,
+                             blank=True)
+    placeId = models.CharField(unique=True, max_length=200, blank=False)
+    detailsUrl = models.TextField(blank=True)
+    coordinates = PointField(blank=True, null=True)
+
+    objects = models.Manager()
+
+    def __str__(self):
+        return self.title
+
+    class Meta(object):
+        ordering = ['title', 'placeId', ]
+
+
 class Image(models.Model):
     title = models.CharField(max_length=200,
                              null=True, blank=True)
@@ -38,19 +54,3 @@ class Image(models.Model):
 
     class Meta(object):
         ordering = ['title', ]
-
-
-class PlaceGeo(models.Model):
-    title = models.CharField(verbose_name='PlaceGeo', max_length=200,
-                             blank=True)
-    placeId = models.CharField(unique=True, max_length=200, blank=False)
-    detailsUrl = models.TextField(blank=True)
-    coordinates = PointField(blank=True, null=True)
-
-    objects = models.Manager()
-
-    def __str__(self):
-        return self.title
-
-    class Meta(object):
-        ordering = ['title', 'placeId', ]

@@ -286,6 +286,19 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-12-14T19:54:56.554Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Экскурсионная компания «Легенды Москвы»",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"image\", \"object\": \"\\u043b\\u0435\\u0433\\u043d\\u0434\\u044b2_2.jpg\"}}]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -730,6 +743,26 @@
     }
 },
 {
+    "model": "places.placegeo",
+    "pk": 1,
+    "fields": {
+        "title": "Легенды Москвы",
+        "placeId": "moscow_legends",
+        "detailsUrl": "",
+        "coordinates": "SRID=4326;POINT (37.62 55.793676)"
+    }
+},
+{
+    "model": "places.placegeo",
+    "pk": 2,
+    "fields": {
+        "title": "Крыши24.рф",
+        "placeId": "roofs24",
+        "detailsUrl": "",
+        "coordinates": "SRID=4326;POINT (37.64 55.753676)"
+    }
+},
+{
     "model": "places.image",
     "pk": 1,
     "fields": {
@@ -847,23 +880,12 @@
     }
 },
 {
-    "model": "places.placegeo",
-    "pk": 1,
+    "model": "places.image",
+    "pk": 14,
     "fields": {
-        "title": "Легенды Москвы",
-        "placeId": "moscow_legends",
-        "detailsUrl": "",
-        "coordinates": "SRID=4326;POINT (37.62 55.793676)"
-    }
-},
-{
-    "model": "places.placegeo",
-    "pk": 2,
-    "fields": {
-        "title": "Крыши24.рф",
-        "placeId": "roofs24",
-        "detailsUrl": "",
-        "coordinates": "SRID=4326;POINT (37.64 55.753676)"
+        "title": "легнды2_2.jpg",
+        "image": "легнды2_2_t9f0fKr.jpg",
+        "location": 2
     }
 }
 ]
