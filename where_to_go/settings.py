@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'places',
+    'tinymce',
     'adminsortable2',
 ]
 
