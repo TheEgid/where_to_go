@@ -9,8 +9,8 @@ services:
       - "5432:5432"
     environment:
       TZ: "Europe/Moscow"
-      POSTGRES_USER: ${POSTGRES_USER1}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD1}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: database1
     networks:
       - database1_network

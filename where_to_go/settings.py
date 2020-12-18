@@ -13,7 +13,6 @@ dotenv_path = BASE_DIR / '.env'
 if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 
-
 if OPERATING_SYSTEM == 'Windows':
     OSGEO_PATH = Path(''.join(osgeo.__path__))
     GDAL_LIBRARY_PATH = str(OSGEO_PATH / 'gdal301')
@@ -79,16 +78,15 @@ WSGI_APPLICATION = 'where_to_go.wsgi.application'
 DATABASES = {'default': {
     'ENGINE': 'django.contrib.gis.db.backends.postgis',
     'NAME': 'database1',
-    'USER': os.getenv("POSTGRES_USER1"),
-    'PASSWORD': os.getenv("POSTGRES_PASSWORD1"),
+    'USER': os.getenv("POSTGRES_USER"),
+    'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
     'PORT': '5432',
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
 
-
 SERIALIZATION_MODULES = {
     "geojson": "django.contrib.gis.serializers.geojson",
- }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -132,4 +130,3 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
-# breakpoint()
