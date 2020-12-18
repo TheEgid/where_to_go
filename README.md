@@ -1,6 +1,6 @@
 # where_to_go
 
-развернутый сайт тут - [https://abstractdata.ru][abstractdata.ru]
+развернутый сайт тут - [https://abstractdata.ru/][abstractdata.ru]
 
 
 ### Как установить (рекомендуется) на ОС LINUX с помощью Docker и docker-compose
