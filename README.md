@@ -1,5 +1,6 @@
 # where_to_go
 
+развернутый сайт тут - https://abstractdata.ru/
 
 
 ### Как установить (рекомендуется) на ОС LINUX с помощью Docker и docker-compose
@@ -38,14 +39,13 @@ pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/GDAL-3.1.4-cp39-cp3
 pip install -r requirements.txt
 ```
 
-Программа требует установленной базы данных PostgreSQL 13.1 c именем <POSTGRES_DB1>.
+Программа требует установленной базы данных PostgreSQL 13.1 c именем _database1_.
 В PGADMIN создайте и запустите скрипт c переменными из .env файла -
 ```
-
-CREATE USER <POSTGRES_USER1>;
-ALTER USER <POSTGRES_USER1> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD1>';
-GRANT ALL PRIVILEGES ON DATABASE <POSTGRES_DB1> TO <POSTGRES_USER1>;
-ALTER ROLE <POSTGRES_USER1> SUPERUSER;
+CREATE USER <POSTGRES_USER>;
+ALTER USER <POSTGRES_USER> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD>';
+GRANT ALL PRIVILEGES ON DATABASE <POSTGRES_DB> TO <POSTGRES_USER>;
+ALTER ROLE <POSTGRES_USER> SUPERUSER;
 ```
 
 ### Использование
@@ -56,5 +56,3 @@ ALTER ROLE <POSTGRES_USER1> SUPERUSER;
 ```
 python main.py runserver
 ```
-
-https://jsonplaceholder.typicode.com/
