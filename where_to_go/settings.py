@@ -4,14 +4,12 @@ import os
 import osgeo
 from dotenv import load_dotenv
 
+load_dotenv()
+
 OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-dotenv_path = BASE_DIR / '.env'
-if os.path.exists(dotenv_path):
-    load_dotenv(dotenv_path)
 
 if OPERATING_SYSTEM == 'Windows':
     OSGEO_PATH = Path(''.join(osgeo.__path__))
@@ -39,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'rest_framework_gis',
     'django.contrib.gis',
     'places',
-    'tinymce',
-    'adminsortable2',
 ]
 
 MIDDLEWARE = [
@@ -78,15 +75,15 @@ WSGI_APPLICATION = 'where_to_go.wsgi.application'
 DATABASES = {'default': {
     'ENGINE': 'django.contrib.gis.db.backends.postgis',
     'NAME': 'database1',
-    'USER': os.getenv("POSTGRES_USER"),
-    'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
+    'USER': os.getenv("POSTGRES_USER1"),
+    'PASSWORD': os.getenv("POSTGRES_PASSWORD1"),
     'PORT': '5432',
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
 
 SERIALIZATION_MODULES = {
     "geojson": "django.contrib.gis.serializers.geojson",
-}
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -130,3 +127,4 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
+# breakpoint()
