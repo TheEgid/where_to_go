@@ -3,23 +3,13 @@ from django.utils.html import format_html
 from django.contrib.gis.db import models as geomodels
 from adminsortable2.admin import SortableInlineAdminMixin, SortableAdminMixin
 from .widgets import LatLongWidget
-from .models import Place, Image, PlaceGeo
+from .models import Place, Image
 from .utils import resize_sides
 
 
 @admin.register(Image)
 class ImageAdmin(SortableAdminMixin, admin.ModelAdmin):
     model = Image
-
-
-@admin.register(PlaceGeo)
-class PlaceGeoAdmin(admin.ModelAdmin):
-    model = PlaceGeo
-    list_display = ('title',)
-
-    formfield_overrides = {
-        geomodels.PointField: {'widget': LatLongWidget},
-    }
 
 
 class ImageInline(SortableInlineAdminMixin, admin.TabularInline):

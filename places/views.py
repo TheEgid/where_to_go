@@ -4,14 +4,14 @@ from django.core import serializers
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 from .utils import clear_string
-from .models import PlaceGeo, Place
+from .models import Place
 
 
 def show_main(request):
-    geo_places_queryset = PlaceGeo.objects.all()
+    geo_places_queryset = Place.objects.all()
 
     for geo_place in geo_places_queryset:
-        detail_url = reverse(show_place, kwargs={'id': geo_place.id})
+        detail_url = reverse(show_place, kwargs={'id': geo_place.placeId})
         geo_place.detailsUrl = detail_url
 
     places_geojson = serializers.serialize('geojson',
@@ -20,7 +20,6 @@ def show_main(request):
                                            fields=('title',
                                                    'placeId',
                                                    'detailsUrl'))
-
     return render(request=request, template_name="index.html",
                   context={"places_geojson": json.loads(places_geojson)})
 

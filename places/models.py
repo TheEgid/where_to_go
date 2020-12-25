@@ -4,30 +4,15 @@ from tinymce import models as tinymce_models
 
 
 class Place(models.Model):
+    placeId = models.AutoField(primary_key=True, null=False, blank=False)
     title = models.CharField(max_length=400, blank=True, verbose_name='Place')
-    placeId = models.PositiveIntegerField(unique=True,blank=False)
     short_description = models.TextField(blank=True,
                                          verbose_name='Краткое описание')
     long_description = tinymce_models.HTMLField(blank=True,
-                                        verbose_name='Полное описание')
+                                                verbose_name='Полное описание')
     coordinates = PointField(blank=True, null=True,
                              verbose_name='Широта и Долгота')
-
-    objects = models.Manager()
-
-    def __str__(self):
-        return self.title
-
-    class Meta(object):
-        ordering = ['title', 'placeId', ]
-
-
-class PlaceGeo(models.Model):
-    title = models.CharField(verbose_name='PlaceGeo', max_length=200,
-                             blank=True)
-    placeId = models.CharField(unique=True, max_length=200, blank=False)
     detailsUrl = models.TextField(blank=True)
-    coordinates = PointField(blank=True, null=True)
 
     objects = models.Manager()
 

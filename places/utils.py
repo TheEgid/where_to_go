@@ -1,9 +1,10 @@
 import codecs
 
 
-def clear_string(some_string):
+def clear_string(line):
+    line = line.replace("", "")
     return codecs.decode(codecs.encode(
-        some_string, 'latin-1', 'backslashreplace'), 'unicode-escape')
+        line, 'latin-1', 'backslashreplace'), 'unicode-escape')
 
 
 def resize_sides(width, height, max_size=99):
