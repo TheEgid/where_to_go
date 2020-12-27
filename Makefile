@@ -4,7 +4,7 @@ COMMAND = docker-compose run --rm djangoapp /bin/bash -c
 
 DB_BACKUP_FILE=backup_db.json
 
-all: build deploy run
+all: build deploy run test
 
 build:
 	docker-compose build
@@ -19,6 +19,7 @@ run:
 	docker-compose up -d;
 
 test:
+	$(COMMAND) 'python3 manage.py test --verbosity 2';
 
 dockerclean:
 	docker system prune -f

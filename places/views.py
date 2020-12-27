@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 from django.core import serializers
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
-from .utils import clear_string
+from .utils import clean_string
 from .models import Place
 
 
@@ -32,8 +32,8 @@ def show_place(request, id):
     response_data = {
         'title': place.title,
         'imgs': [_image.image.url for _image in place.img.all()],
-        'description_short': clear_string(place.short_description),
-        'description_long': clear_string(place.long_description),
+        'description_short': clean_string(place.short_description),
+        'description_long': clean_string(place.long_description),
         'coordinates': {'lng': str(lng), 'lat': str(lat)},
     }
 
