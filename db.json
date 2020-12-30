@@ -887,12 +887,12 @@
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$216000$hphPpffOID2Y$a+Mlj5B1NO8QgVYDNjrX34JNMt1nn14fh1TvV5zjcok=",
-            "last_login": "2020-12-27T07:23:29.793Z",
+            "last_login": "2020-12-27T12:43:51.537Z",
             "is_superuser": true,
             "username": "in_one",
             "first_name": "",
             "last_name": "",
-            "email": "email5@ya.ru",
+            "email": "some@ya.ru",
             "is_staff": true,
             "is_active": true,
             "date_joined": "2020-12-12T13:40:34.005Z",
@@ -982,10 +982,10 @@
     },
     {
         "model": "sessions.session",
-        "pk": "e96kdu00nfqhqrnq3rl9gpv8e7vm1ghp",
+        "pk": "212hfrx94zush9po666kmvxw5p1fpodz",
         "fields": {
-            "session_data": ".eJxVjMsOwiAQRf-FtSEMT3Hpvt9ABgakaiAp7cr479qkC93ec859sYDbWsM28hJmYhcG7PS7RUyP3HZAd2y3zlNv6zJHviv8oINPnfLzerh_BxVH_dbJWpOlc1rphEQekgDIEiIiRK8UmqJc8aCN0JKsP5diDZBQKbrohGTvD9YcN2A:1ktQOn:DXvGJQ7ib6ya4dCQM64rN2BVK2qtTtJsHmYJtTb54wY",
-            "expire_date": "2021-01-10T07:23:29.795Z"
+            "session_data": ".eJxVjEEOwiAQRe_C2hAGKIhL956BzMAgVUOT0q6Md7dNutDte-__t4i4LjWunec4ZnERIE6_jDA9ue0iP7DdJ5mmtswjyT2Rh-3yNmV-XY_276Bir9s6-XPIBUBBIfZsvXO6aMfaFLKkUJsEMCQLkJi9MtkXDoGM2jAaHsTnC-VFN-0:1ktVOp:vaP8v12HR-3OVRWSEbGnnYX7W3It3gwuy4i4fi5xi1o",
+            "expire_date": "2021-01-10T12:43:51.538Z"
         }
     },
     {

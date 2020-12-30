@@ -20,7 +20,6 @@ class LatLongWidget(forms.MultiWidget):
     def value_from_datadict(self, data, files, name):
         mylat = data[name + '_0']
         mylong = data[name + '_1']
-
         try:
             point = Point(float(mylat), float(mylong))
         except ValueError:

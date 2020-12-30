@@ -15,9 +15,9 @@ class LoadPlaceError(CommandError):
 def create_images(new_place_obj, new_place_json):
     image_links = new_place_json['imgs']
     for count, img_link in enumerate(image_links):
-        unical_hash = get_random_string(5)
+        unique_hash = get_random_string(5)
         new_name = f"{new_place_obj.title.replace(' ', '_')}" \
-                   f"_{count}_{unical_hash}{Path(img_link).suffix}"
+                   f"_{count}_{unique_hash}{Path(img_link).suffix}"
         image_obj, status = Image.objects.get_or_create(image=new_name,
                                                         number=count,
                                                         location=new_place_obj)

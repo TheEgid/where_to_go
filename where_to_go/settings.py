@@ -21,6 +21,10 @@ if OPERATING_SYSTEM == 'Windows':
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
 
+SUPERUSER_EMAIL = os.getenv("SUPERUSER_EMAIL")
+SUPERUSER_LOGIN = os.getenv("SUPERUSER_LOGIN")
+SUPERUSER_PASSWORD = os.getenv("SUPERUSER_PASSWORD")
+
 if OPERATING_SYSTEM != "Windows":
     DEBUG = False
     SECURE_CONTENT_TYPE_NOSNIFF = True
