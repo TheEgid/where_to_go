@@ -19,6 +19,8 @@
 
     {{ places_geojson|json_script:"places-geojson" }}
 
+    {% verbatim %}
+
     <script id="app-template" type="text/template">
         <div v-bind:class="{'sidebar-content': 1, 'bg-white': selectedPlace, 'bg-secondary': !selectedPlace}">
             <div v-if="promptVisible" class="d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
@@ -73,7 +75,6 @@
 </head>
 <body>
 
-{% verbatim %}
 
 <div id="sidebar">
     <div id="sidebar-app"></div>
@@ -81,7 +82,7 @@
 
 <div id="map"></div>
 
-{% endverbatim %}
+    {% endverbatim %}
 
 <script src="{% static '/js/jquery-3.5.1.slim.min.js' %}"></script>
 <script src="{% static '/js/popper.min.js' %}"></script>

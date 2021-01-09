@@ -43,21 +43,21 @@ pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/GDAL-3.1.4-cp39-cp3
 ```   
 Затем используйте pip для установки зависимостей:  
   
-```  
+```
 pip install -r requirements.txt  
-```  
+```
   
 Программа требует установленной базы данных Postgis c именем _database1_.  
 В PGADMIN создайте и запустите скрипт c переменными из .env файла -  
   
-```sql  
-CREATE USER <POSTGRES_USER>;  
-  
-ALTER USER <POSTGRES_USER> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD>';  
-  
-GRANT ALL PRIVILEGES ON DATABASE database1 TO <POSTGRES_USER>;  
-  
-ALTER ROLE <POSTGRES_USER> SUPERUSER;  
+```sql
+CREATE USER <POSTGRES_USER>;
+
+ALTER USER <POSTGRES_USER> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD>';
+
+GRANT ALL PRIVILEGES ON DATABASE database1 TO <POSTGRES_USER>;
+
+ALTER ROLE <POSTGRES_USER> SUPERUSER;
 ```   
 ### Использование  
   
