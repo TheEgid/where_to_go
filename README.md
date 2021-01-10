@@ -52,13 +52,11 @@ pip install -r requirements.txt
   
 ```sql
 CREATE USER <POSTGRES_USER>;
-
 ALTER USER <POSTGRES_USER> WITH ENCRYPTED PASSWORD '<POSTGRES_PASSWORD>';
-
 GRANT ALL PRIVILEGES ON DATABASE database1 TO <POSTGRES_USER>;
-
 ALTER ROLE <POSTGRES_USER> SUPERUSER;
-```   
+```  
+
 ### Использование  
   
 Переходим в каталог с программой. 

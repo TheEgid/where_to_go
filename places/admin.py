@@ -17,9 +17,9 @@ class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
     extra = 1
     can_delete = True
     show_change_link = True
-    classes = ('collapse',)
-    readonly_fields = ('preview_image',)
-    fields = (('image', ), 'preview_image')
+    classes = ['collapse', ]
+    readonly_fields = ['preview_image', ]
+    fields = [('image', ), 'preview_image']
 
     def preview_image(self, obj):
         if obj:
@@ -33,8 +33,8 @@ class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
     model = Place
-    list_display = ('title',)
-    readonly_fields = ('placeId',)
+    list_display = ['title', ]
+    readonly_fields = ['placeId', ]
 
     formfield_overrides = {
         geomodels.PointField: {'widget': LatLongWidget},
