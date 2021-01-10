@@ -4,7 +4,6 @@ from django.contrib.gis.db import models as geomodels
 from adminsortable2.admin import SortableInlineAdminMixin, SortableAdminMixin
 from .widgets import LatLongWidget
 from .models import Place, Image
-from .utils import resize_sides
 
 
 @admin.register(Image)
@@ -22,10 +21,10 @@ class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
     fields = [('image', ), 'preview_image']
 
     def preview_image(self, obj):
+        img_width = '99px'
         if obj:
-            width, height = resize_sides(obj.image.width, obj.image.height)
             return format_html(f'<img src="{obj.image.url}" '
-                               f'width="{width}" height={height} />')
+                               f'alt="Preview" style="width:{img_width}">')
         else:
             return format_html("No Preview")
 
