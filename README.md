@@ -7,7 +7,7 @@
 ### Как установить (рекомендуется) на ОС LINUX с помощью Docker и docker-compose  
   
 Установка будет развернута из контейнеров с доступом через "обратный прокси" [Nginx](https://nginx.org/ru/).  
-Скачиваем файлы. Переходим в папку с файлами. Docker и docker-compose должны быть уже установлены. Выполняем комманду:  
+Скачиваем файлы. Переходим в папку с файлами. Docker и docker-compose должны быть уже установлены. Выполняем команду:  
 ```  
 make build  
 ```  
@@ -47,8 +47,8 @@ pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/GDAL-3.1.4-cp39-cp3
 pip install -r requirements.txt  
 ```
   
-Программа требует установленной базы данных Postgis c именем _database1_.  
-В PGADMIN создайте и запустите скрипт c переменными из .env файла -  
+Программа требует установленной базы данных Postgis с именем _database1_.  
+В PGADMIN создайте и запустите скрипт с переменными из .env файла -  
   
 ```sql
 CREATE USER <POSTGRES_USER>;
