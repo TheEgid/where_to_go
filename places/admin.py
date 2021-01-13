@@ -9,6 +9,8 @@ from .models import Place, Image
 @admin.register(Image)
 class ImageAdmin(SortableAdminMixin, admin.ModelAdmin):
     model = Image
+    autocomplete_fields = ['location', ]
+    raw_id_fields = ['location', ]
 
 
 class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
@@ -33,6 +35,7 @@ class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
 class PlaceAdmin(admin.ModelAdmin):
     model = Place
     list_display = ['title', ]
+    search_fields = ['title', ]
     readonly_fields = ['placeId', ]
 
     formfield_overrides = {

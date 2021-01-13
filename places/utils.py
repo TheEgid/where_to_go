@@ -1,6 +1,7 @@
 import codecs
 import requests
 from PIL import Image
+from pathlib import Path
 from io import BytesIO
 from django.conf import settings
 
@@ -13,7 +14,7 @@ def clean_string(line):
 
 def save_picture(url, new_name):
     filename = settings.MEDIA_ROOT / new_name
-    response = requests.get(url, verify=True)
+    response = requests.get(url)
     response.raise_for_status()
     img = Image.open(BytesIO(response.content))
     img.save(filename)
