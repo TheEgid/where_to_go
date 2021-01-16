@@ -14,8 +14,6 @@ class Place(models.Model):
                              verbose_name='Широта и Долгота')
     detailsUrl = models.TextField(blank=True)
 
-    objects = models.Manager()
-
     def __str__(self):
         return self.title
 
@@ -29,7 +27,6 @@ class Image(models.Model):
                                  on_delete=models.CASCADE, default=0)
     number = models.PositiveIntegerField(verbose_name='Позиция', null=True,
                                          blank=True, default=0)
-    objects = models.Manager()
 
     def __str__(self):
         return str(self.image)

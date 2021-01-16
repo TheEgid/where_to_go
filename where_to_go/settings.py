@@ -1,36 +1,30 @@
 from pathlib import Path
 import platform
-import os
 import osgeo
-from dotenv import load_dotenv
+from environs import Env
 
-OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv_path = BASE_DIR / '.env'
-if os.path.exists(dotenv_path):
-    load_dotenv(dotenv_path)
+OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
 
 if OPERATING_SYSTEM == 'Windows':
     OSGEO_PATH = Path(''.join(osgeo.__path__))
     GDAL_LIBRARY_PATH = str(OSGEO_PATH / 'gdal301')
     GEOS_LIBRARY_PATH = str(OSGEO_PATH / 'geos_c')
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
-
-SUPERUSER_EMAIL = os.getenv("SUPERUSER_EMAIL")
-SUPERUSER_LOGIN = os.getenv("SUPERUSER_LOGIN")
-SUPERUSER_PASSWORD = os.getenv("SUPERUSER_PASSWORD")
+SECRET_KEY = env.str("SECRET_KEY")
 
 if OPERATING_SYSTEM != "Windows":
     DEBUG = False
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = 'DENY'
 else:
-    DEBUG = os.getenv("DEBUG", "true").lower() in ['yes', '1', 'true']
+    DEBUG = env.bool("DEBUG", default=True)
+
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -82,8 +76,8 @@ WSGI_APPLICATION = 'where_to_go.wsgi.application'
 DATABASES = {'default': {
     'ENGINE': 'django.contrib.gis.db.backends.postgis',
     'NAME': 'database1',
-    'USER': os.getenv("POSTGRES_USER"),
-    'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
+    'USER': env.str("POSTGRES_USER"),
+    'PASSWORD': env.str("POSTGRES_PASSWORD"),
     'PORT': '5432',
     'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
 }
