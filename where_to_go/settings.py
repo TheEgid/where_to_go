@@ -11,7 +11,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
 
-if OPERATING_SYSTEM == 'Windows':
+# This paths Gdal and Geos settings for Windows only
+# https://stackoverflow.com/questions/44140241/geodjango-on-windows-try-setting-gdal-library-path-in-your-settings
+# https://code.djangoproject.com/ticket/28237
+if platform.system() == "Windows":
     OSGEO_PATH = Path(''.join(osgeo.__path__))
     GDAL_LIBRARY_PATH = str(OSGEO_PATH / 'gdal301')
     GEOS_LIBRARY_PATH = str(OSGEO_PATH / 'geos_c')
@@ -24,7 +27,6 @@ if OPERATING_SYSTEM != "Windows":
     X_FRAME_OPTIONS = 'DENY'
 else:
     DEBUG = env.bool("DEBUG", default=True)
-
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
