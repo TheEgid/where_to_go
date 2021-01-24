@@ -26,10 +26,24 @@ make run
 Тут же создаем .env файл. Ваш .env должен содержать строки с константами:  
 
 ```  
+HOSTNAME
+DEBUG
 SECRET_KEY  
 POSTGRES_USER  
 POSTGRES_PASSWORD  
 ```  
+
+Настройки dev развертывания:
+``` 
+HOST=localhost
+DEBUG=True
+``` 
+
+Настройки prod развертывания:
+``` 
+HOST=database1
+DEBUG=False
+``` 
 
 Для создания суперпользователя можно добавить константы
 ```  

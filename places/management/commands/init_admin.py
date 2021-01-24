@@ -1,4 +1,3 @@
-import pprint
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth.models import User
 from environs import Env
@@ -25,11 +24,11 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         if User.objects.count() == 0:
             email = options['email']
-            username = options['username']
+            login = options['login']
             password = options['password']
-            pprint.pprint(f'Creating account for {username}, {email}')
+            print(f'Creating account for {login}, {email}')
             admin = User.objects.create_superuser(email=email,
-                                                  username=username,
+                                                  username=login,
                                                   password=password)
             admin.is_active = True
             admin.is_admin = True

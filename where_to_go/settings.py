@@ -9,8 +9,6 @@ env.read_env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-OPERATING_SYSTEM = 'Linux' if (platform.system() != "Windows") else 'Windows'
-
 # This paths Gdal and Geos settings for Windows only
 # https://stackoverflow.com/questions/44140241/geodjango-on-windows-try-setting-gdal-library-path-in-your-settings
 # https://code.djangoproject.com/ticket/28237
@@ -21,12 +19,12 @@ if platform.system() == "Windows":
 
 SECRET_KEY = env.str("SECRET_KEY")
 
-if OPERATING_SYSTEM != "Windows":
-    DEBUG = False
+DEBUG = env.bool("DEBUG", default=True)
+
+#  Security production settings
+if not DEBUG:
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = 'DENY'
-else:
-    DEBUG = env.bool("DEBUG", default=True)
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -81,7 +79,7 @@ DATABASES = {'default': {
     'USER': env.str("POSTGRES_USER"),
     'PASSWORD': env.str("POSTGRES_PASSWORD"),
     'PORT': '5432',
-    'HOST': 'localhost' if (OPERATING_SYSTEM != 'Linux') else 'database1'}
+    'HOST': env.str("HOST")}
 }
 
 SERIALIZATION_MODULES = {
