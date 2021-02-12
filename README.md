@@ -26,8 +26,6 @@ make run
 Тут же создаем .env файл. Ваш .env должен содержать строки с константами:  
 
 ```  
-HOSTNAME
-DEBUG
 SECRET_KEY  
 POSTGRES_USER  
 POSTGRES_PASSWORD  

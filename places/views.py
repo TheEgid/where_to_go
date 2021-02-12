@@ -9,7 +9,7 @@ def show_main(request):
     places_geojson = {"type": "FeatureCollection", "features": []}
 
     for geo_place in geo_places_queryset:
-        detail_url = reverse(show_place, kwargs={'id': geo_place.id})
+        detail_url = reverse('show_place', kwargs={'id': geo_place.id})
         lng, lat = geo_place.coordinates.coords
         places_geojson['features'].append(
             {
@@ -35,7 +35,7 @@ def show_place(request, id):
 
     response_data = {
         'title': place.title,
-        'imgs': [_image.image.url for _image in place.img.all()],
+        'imgs': [_image.image.url for _image in place.images.all()],
         'description_short': place.short_description,
         'description_long': place.long_description,
         'coordinates': {'lng': lng, 'lat': lat},
