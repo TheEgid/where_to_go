@@ -13,18 +13,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # https://stackoverflow.com/questions/44140241/geodjango-on-windows-try-setting-gdal-library-path-in-your-settings
 # https://code.djangoproject.com/ticket/28237
 if platform.system() == "Windows":
-    OSGEO_PATH = Path(''.join(osgeo.__path__))
+    OSGEO_PATH = Path(osgeo.__file__).parent
     GDAL_LIBRARY_PATH = str(OSGEO_PATH / 'gdal301')
     GEOS_LIBRARY_PATH = str(OSGEO_PATH / 'geos_c')
 
-SECRET_KEY = env.str("SECRET_KEY")
+SECRET_KEY = env.str("SECRET_KEY", default="not-so-secret")
 
 DEBUG = env.bool("DEBUG", default=True)
 
 #  Security production settings
-if not DEBUG:
-    SECURE_CONTENT_TYPE_NOSNIFF = True
-    X_FRAME_OPTIONS = 'DENY'
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -79,7 +78,7 @@ DATABASES = {'default': {
     'USER': env.str("POSTGRES_USER"),
     'PASSWORD': env.str("POSTGRES_PASSWORD"),
     'PORT': '5432',
-    'HOST': env.str("HOST")}
+    'HOST': env.str("HOST", default='localhost')}
 }
 
 SERIALIZATION_MODULES = {

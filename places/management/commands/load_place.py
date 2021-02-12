@@ -49,8 +49,8 @@ def save_picture(url, new_name):
 def create_images(new_place_obj, new_place_json):
     image_links = new_place_json['imgs']
     for count, img_link in enumerate(image_links):
-        new_name = f"{new_place_obj.title.replace(' ', '_')}_" \
-                   f"{Path(img_link).name}"
+        new_place_obj_title = new_place_obj.title.replace(' ', '_')
+        new_name = new_place_obj_title + Path(img_link)
         image_obj, status = Image.objects.get_or_create(
             image=new_name,
             defaults={
