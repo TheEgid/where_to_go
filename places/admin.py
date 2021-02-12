@@ -36,7 +36,7 @@ class PlaceAdmin(admin.ModelAdmin):
     model = Place
     list_display = ['title', ]
     search_fields = ['title', ]
-    readonly_fields = ['placeId', ]
+    readonly_fields = ['id', ]
 
     formfield_overrides = {
         geomodels.PointField: {'widget': LatLongWidget},

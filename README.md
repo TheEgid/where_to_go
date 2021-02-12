@@ -33,12 +33,6 @@ POSTGRES_USER
 POSTGRES_PASSWORD  
 ```  
 
-Настройки dev развертывания:
-``` 
-HOST=localhost
-DEBUG=True
-``` 
-
 Настройки prod развертывания:
 ``` 
 HOST=database1

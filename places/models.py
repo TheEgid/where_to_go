@@ -4,8 +4,8 @@ from tinymce import models as tinymce_models
 
 
 class Place(models.Model):
-    placeId = models.AutoField(primary_key=True, null=False, blank=False)
-    title = models.CharField(max_length=400, blank=True, verbose_name='Place')
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=400, blank=True, verbose_name='Место')
     short_description = models.TextField(blank=True,
                                          verbose_name='Краткое описание')
     long_description = tinymce_models.HTMLField(blank=True,
@@ -18,12 +18,13 @@ class Place(models.Model):
         return self.title
 
     class Meta(object):
-        ordering = ['title', 'placeId', ]
+        ordering = ['title', 'id', ]
 
 
 class Image(models.Model):
     image = models.ImageField(verbose_name='Фотография')
     location = models.ForeignKey(Place, related_name='img',
+                                 verbose_name='Место',
                                  on_delete=models.CASCADE, default=0)
     number = models.PositiveIntegerField(verbose_name='Позиция', null=True,
                                          blank=True, default=0)
