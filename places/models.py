@@ -5,7 +5,9 @@ from tinymce import models as tinymce_models
 
 class Place(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=400, verbose_name='Место')
+    title = models.CharField(max_length=400,
+                             db_index=True,
+                             verbose_name='Место')
     short_description = models.TextField(blank=True,
                                          verbose_name='Краткое описание')
     long_description = tinymce_models.HTMLField(blank=True,
@@ -28,7 +30,9 @@ class Image(models.Model):
                                  related_name='images',
                                  verbose_name='Место',
                                  on_delete=models.CASCADE)
-    number = models.PositiveIntegerField(verbose_name='Позиция', default=0)
+    number = models.PositiveIntegerField(db_index=True,
+                                         default=0,
+                                         verbose_name='Позиция')
 
     def __str__(self):
         return str(self.image)
