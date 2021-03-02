@@ -29,7 +29,7 @@ class ImageInline(SortableInlineAdminMixin, admin.TabularInline):
                 ' max-width: 250px;/>',
                 image_url=obj.image.url)
         else:
-            return format_html("{no_preview}", no_preview="No Preview")
+            return format_html('<b>preview image not found</b>')
 
 
 @admin.register(Place)

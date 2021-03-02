@@ -4,7 +4,6 @@ from tinymce import models as tinymce_models
 
 
 class Place(models.Model):
-    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=400,
                              db_index=True,
                              verbose_name='Место')
