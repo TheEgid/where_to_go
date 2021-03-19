@@ -50,7 +50,8 @@ SUPERUSER_EMAIL
 ```  
 pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/numpy-1.19.4+vanilla-cp39-cp39-win_amd64.whl  
   
-pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/GDAL-3.1.4-cp39-cp39-win_amd64.whl  
+pip install  http://www.xavierdupre.fr/enseignement/setup/GDAL-3.1.4-cp39-cp39-win_amd64.whl
+
 ```   
 Затем используйте pip для установки зависимостей:  
   
